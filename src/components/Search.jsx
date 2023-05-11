@@ -83,7 +83,7 @@ function Search() {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
-        <FiSearch className="font-bold text-[25px] text-white mt-1" />
+        <FiSearch className="font-bold text-[25px] text-white mt-1" onClick={handleSearch} />
       </div>
       {err && (
         <span className="font-bold text-red-600 text-center z-3">
