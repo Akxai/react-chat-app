@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.owner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.owner p {
+  background-color: #8da4f1;
+  color: white;
+  border-radius: 10px 0 10px 10px;
+}
+
+.owner #message-img {
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 0.3em; /* set the width of the scrollbar */
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background-color: transparent; /* set the color of the track */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* set the color of the thumb */
+  border-radius: 1em; /* set the radius of the thumb */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #718096; /* set the color of the thumb on hover */
+}
+
+@media screen and (max-width: 1000px) {
+  #logo {
+    display: none;
+  }
+  #logout {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #Chatbar {
+    width: 70%;
+  }
+  #chat-name p {
+    display: none;
+  }
+  #chat-name span {
+    display: none;
+  }
+  #side-bar {
+    width: 10%;
+  }
+}
